@@ -24,16 +24,16 @@ mongoose
       useUnifiedTopology: true,
    })
    .then(() => {
-      console.log('DB connections succesful');
+      // console.log('DB connections succesful');
    });
 
 const port = process.env.PORT;
 const server = app.listen(port, () => {
-   console.log(` App running on port ${port}...`);
+   // console.log(` App running on port ${port}...`);
 });
 
 process.on('unhandledRejection', (err) => {
-   console.log(err.name, err.message);
+   // console.log(err.name, err.message);
    console.log('Unhandled rejection 💥💥');
    server.close(() => {
       process.exit(1);
