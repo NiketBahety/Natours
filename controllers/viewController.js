@@ -13,7 +13,7 @@ exports.getOverview = catchAsync(async (req, res) => {
    res.status(200)
       .set(
          'Content-Security-Policy',
-         'connect-src https://*.tiles.mapbox.com https://api.mapbox.com https://events.mapbox.com ws://127.0.0.1:55563/ http://127.0.0.1:3000/api/v1/users/logout https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js http://127.0.0.1:3000/api/v1/users/login http://127.0.0.1:3000/api/v1/users/updateMyData http://127.0.0.1:3000/api/v1/users/updateMyPassword http://127.0.0.1:3000/api/v1/users/signup http://127.0.0.1:3000/js/bundle.js:9180'
+         'connect-src https://*.tiles.mapbox.com https://api.mapbox.com https://events.mapbox.com ws://127.0.0.1:55563/ /api/v1/users/logout https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js /api/v1/users/login /api/v1/users/updateMyData /api/v1/users/updateMyPassword /api/v1/users/signup /js/bundle.js:9180'
       )
       .render('overview', {
          title: 'All Tours',
@@ -36,7 +36,7 @@ exports.getTour = catchAsync(async (req, res, next) => {
    res.status(200)
       .set(
          'Content-Security-Policy',
-         'connect-src https://*.tiles.mapbox.com https://api.mapbox.com https://events.mapbox.com ws://127.0.0.1:55563/ http://127.0.0.1:3000/api/v1/users/logout https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js http://127.0.0.1:3000/api/v1/users/login http://127.0.0.1:3000/api/v1/users/updateMyData http://127.0.0.1:3000/api/v1/users/updateMyPassword http://127.0.0.1:3000/api/v1/users/signup http://127.0.0.1:3000/js/bundle.js:9180'
+         'connect-src https://*.tiles.mapbox.com https://api.mapbox.com https://events.mapbox.com ws://127.0.0.1:55563/ /api/v1/users/logout https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js /api/v1/users/login /api/v1/users/updateMyData /api/v1/users/updateMyPassword /api/v1/users/signup /js/bundle.js:9180'
       )
       .render('tour', {
          title: tour.name,
@@ -48,7 +48,7 @@ exports.login = (req, res) => {
    res.status(200)
       .set(
          'Content-Security-Policy',
-         'connect-src https://*.tiles.mapbox.com https://api.mapbox.com https://events.mapbox.com ws://127.0.0.1:55563/ http://127.0.0.1:3000/api/v1/users/logout https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js http://127.0.0.1:3000/api/v1/users/login http://127.0.0.1:3000/api/v1/users/updateMyData http://127.0.0.1:3000/api/v1/users/updateMyPassword http://127.0.0.1:3000/api/v1/users/signup http://127.0.0.1:3000/js/bundle.js:9180'
+         'connect-src https://*.tiles.mapbox.com https://api.mapbox.com https://events.mapbox.com ws://127.0.0.1:55563/ /api/v1/users/logout https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js /api/v1/users/login /api/v1/users/updateMyData /api/v1/users/updateMyPassword /api/v1/users/signup /js/bundle.js:9180'
       )
       .render('login', {
          title: 'Login',
